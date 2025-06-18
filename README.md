@@ -1,18 +1,5 @@
 # 📊 Bussines Dashboard
 
-<p align="center">
-
-[![Python](https://img.shields.io/badge/Python-3.12+-3776AB?style=for-the-badge&logo=python&logoColor=white)](https://python.org)
-[![Streamlit](https://img.shields.io/badge/Streamlit-FF4B4B?style=for-the-badge&logo=streamlit&logoColor=white)](https://streamlit.io)
-[![SQLite](https://img.shields.io/badge/SQLite-003B57?style=for-the-badge&logo=sqlite&logoColor=white)](https://sqlite.org)
-[![UV](https://img.shields.io/badge/UV-Package_Manager-purple?style=for-the-badge)](https://docs.astral.sh/uv/)
-
-[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg?style=for-the-badge)](LICENSE)
-[![Status](https://img.shields.io/badge/Status-Active-brightgreen?style=for-the-badge)](https://github.com/coffeeisoxygen/bussiness_dashboard)
-[![Made with ❤️](https://img.shields.io/badge/Made%20with-❤️-red?style=for-the-badge)](https://github.com/coffeeisoxygen)
-
-</p>
-
 ---
 
 ## 📑 Table of Contents
@@ -141,9 +128,7 @@ Jika Anda ingin berkontribusi pada project ini, silakan fork repository ini dan 
 
 Jika Anda memiliki pertanyaan atau saran, silakan hubungi saya :
 
-[![GitHub](https://img.shields.io/badge/GitHub-100000?style=for-the-badge&logo=github&logoColor=white)](https://github.com/coffeeisoxygen)
-[![Email](https://img.shields.io/badge/Email-D14836?style=for-the-badge&logo=gmail&logoColor=white)](mailto:hasanmaki.ahmad@gmail.com)
-[![WhatsApp](https://img.shields.io/badge/WhatsApp-25D366?style=for-the-badge&logo=whatsapp&logoColor=white)](https://wa.me/6285777076575)
+[![GitHub](https://img.shields.io/badge/GitHub-100000?style=for-the-badge&logo=github&logoColor=white)](https://github.com/coffeeisoxygen) [![Email](https://img.shields.io/badge/Email-D14836?style=for-the-badge&logo=gmail&logoColor=white)](mailto:hasanmaki.ahmad@gmail.com) [![WhatsApp](https://img.shields.io/badge/WhatsApp-25D366?style=for-the-badge&logo=whatsapp&logoColor=white)](https://wa.me/6285777076575)
 
 ---
 
@@ -152,3 +137,14 @@ Jika Anda memiliki pertanyaan atau saran, silakan hubungi saya :
 Jangan lupa berikan star jika project ini membantu!
 
 Made with ❤️ by [coffeeisoxygen](https://github.com/coffeeisoxygen)
+
+---
+
+[![Python](https://img.shields.io/badge/Python-3.12+-3776AB?style=for-the-badge&logo=python&logoColor=white)](https://python.org) [![Streamlit](https://img.shields.io/badge/Streamlit-FF4B4B?style=for-the-badge&logo=streamlit&logoColor=white)](https://streamlit.io) [![SQLite](https://img.shields.io/badge/SQLite-003B57?style=for-the-badge&logo=sqlite&logoColor=white)](https://sqlite.org) [![UV](https://img.shields.io/badge/UV-Package_Manager-purple?style=for-the-badge)](https://docs.astral.sh/uv/)
+
+[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg?style=for-the-badge)](LICENSE) [![Status](https://img.shields.io/badge/Status-Active-brightgreen?style=for-the-badge)](https://github.com/coffeeisoxygen/bussiness_dashboard) [![Made with ❤️](https://img.shields.io/badge/Made%20with-❤️-red?style=for-the-badge)](https://github.com/coffeeisoxygen)
+[![UV](https://img.shields.io/badge/UV-Package_Manager-purple?style=for-the-badge)](https://docs.astral.sh/uv/)
+
+[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg?style=for-the-badge)](LICENSE)
+[![Status](https://img.shields.io/badge/Status-Active-brightgreen?style=for-the-badge)](https://github.com/coffeeisoxygen/bussiness_dashboard)
+[![Made with ❤️](https://img.shields.io/badge/Made%20with-❤️-red?style=for-the-badge)](https://github.com/coffeeisoxygen)
