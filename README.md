@@ -144,7 +144,3 @@ Made with ❤️ by [coffeeisoxygen](https://github.com/coffeeisoxygen)
 
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg?style=for-the-badge)](LICENSE) [![Status](https://img.shields.io/badge/Status-Active-brightgreen?style=for-the-badge)](https://github.com/coffeeisoxygen/bussiness_dashboard) [![Made with ❤️](https://img.shields.io/badge/Made%20with-❤️-red?style=for-the-badge)](https://github.com/coffeeisoxygen)
 [![UV](https://img.shields.io/badge/UV-Package_Manager-purple?style=for-the-badge)](https://docs.astral.sh/uv/)
-
-[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg?style=for-the-badge)](LICENSE)
-[![Status](https://img.shields.io/badge/Status-Active-brightgreen?style=for-the-badge)](https://github.com/coffeeisoxygen/bussiness_dashboard)
-[![Made with ❤️](https://img.shields.io/badge/Made%20with-❤️-red?style=for-the-badge)](https://github.com/coffeeisoxygen)
