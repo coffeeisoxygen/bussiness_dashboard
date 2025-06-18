@@ -23,6 +23,7 @@ dev = [
     "pytest-html>=4.1.1",
     "pytest-mock>=3.14.1",
     "ruff>=0.11.13",
+    "sqlfluff>=3.4.1",
 ]
 [build-system]
 requires = ["setuptools", "setuptools-scm", "wheel"]
