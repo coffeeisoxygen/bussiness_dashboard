@@ -1,0 +1,66 @@
+# Pre-commit configuration for ETL dashboard project
+# Simplified for solo developer workflow
+
+repos:
+  # Basic file validation and formatting
+  - repo: https://github.com/pre-commit/pre-commit-hooks
+    rev: v5.0.0
+    hooks:
+      # Auto-fix file endings
+      - id: trailing-whitespace
+        args: [--markdown-linebreak-ext=md]
+      - id: end-of-file-fixer
+
+      # File format validation
+      - id: check-json
+      - id: check-toml
+      - id: check-yaml
+      - id: pretty-format-json
+        args: [--autofix]
+
+      # Basic safety checks
+      - id: check-added-large-files
+        args: ["--maxkb=5000"]
+      - id: check-merge-conflict
+      - id: check-case-conflict
+
+      # Python validation
+      - id: check-ast
+      - id: debug-statements
+
+  # Python formatting and linting with Ruff
+  - repo: https://github.com/astral-sh/ruff-pre-commit
+    rev: "v0.11.13"
+    hooks:
+      - id: ruff-format
+        types_or: [python, pyi]
+      - id: ruff
+        args: [--fix, --exit-non-zero-on-fix]
+        types_or: [python, pyi]
+  # Dependency management with UV
+  - repo: https://github.com/astral-sh/uv-pre-commit
+    rev: 0.7.13
+    hooks:
+      - id: uv-lock
+        files: ^pyproject\.toml$
+
+# Configuration - Simplified for solo developer
+default_install_hook_types:
+  - pre-commit
+
+default_stages: [pre-commit]
+fail_fast: false # Don't stop on first failure
+
+# Exclude auto-generated and build files
+exclude: |
+  (?x)^(
+    \.venv/.*|
+    \.reports/.*|
+    dist/.*|
+    build/.*|
+    .*\.egg-info/.*|
+    \.vscode/.*|
+    \.idea/.*|
+    \.pytest_cache/.*|
+    __pycache__/.*
+  )$
