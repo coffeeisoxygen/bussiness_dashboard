@@ -52,3 +52,4 @@ data/
 backup/
 .reports/allure/
 .reports/
+./sample/

@@ -114,10 +114,8 @@ filterwarnings = [
 ]
 
 
-# ✅ Minimum version requirements
 minversion = "8.0"
 
-# ✅ Test discovery options
 norecursedirs = [
     ".*",
     "build",
