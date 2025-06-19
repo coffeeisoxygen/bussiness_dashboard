@@ -112,10 +112,12 @@ wheels = [
 name = "bussiness-dashboard"
 source = { editable = "." }
 dependencies = [
+    { name = "loguru" },
     { name = "openpyxl" },
     { name = "plotly" },
     { name = "pygwalker" },
     { name = "sqlalchemy" },
+    { name = "sqlmodel" },
     { name = "st-gsheets-connection" },
     { name = "stqdm" },
     { name = "streamlit" },
@@ -134,10 +136,12 @@ dev = [
 
 [package.metadata]
 requires-dist = [
+    { name = "loguru", specifier = ">=0.7.3" },
     { name = "openpyxl", specifier = ">=3.1.5" },
     { name = "plotly", specifier = ">=6.1.2" },
     { name = "pygwalker", specifier = ">=0.4.9.15" },
     { name = "sqlalchemy", specifier = ">=2.0.41" },
+    { name = "sqlmodel", specifier = ">=0.0.24" },
     { name = "st-gsheets-connection", specifier = ">=0.1.0" },
     { name = "stqdm", specifier = ">=0.0.5" },
     { name = "streamlit", specifier = ">=1.45.1" },
@@ -717,6 +721,19 @@ wheels = [
 ]
 
 [[package]]
+name = "loguru"
+version = "0.7.3"
+source = { registry = "https://pypi.org/simple" }
+dependencies = [
+    { name = "colorama", marker = "sys_platform == 'win32'" },
+    { name = "win32-setctime", marker = "sys_platform == 'win32'" },
+]
+sdist = { url = "https://files.pythonhosted.org/packages/3a/05/a1dae3dffd1116099471c643b8924f5aa6524411dc6c63fdae648c4f1aca/loguru-0.7.3.tar.gz", hash = "sha256:19480589e77d47b8d85b2c827ad95d49bf31b0dcde16593892eb51dd18706eb6", size = 63559 }
+wheels = [
+    { url = "https://files.pythonhosted.org/packages/0c/29/0348de65b8cc732daa3e33e67806420b2ae89bdce2b04af740289c5c6c8c/loguru-0.7.3-py3-none-any.whl", hash = "sha256:31a33c10c8e1e10422bfd431aeb5d351c7cf7fa671e3c4df004162264b28220c", size = 61595 },
+]
+
+[[package]]
 name = "markupsafe"
 version = "3.0.2"
 source = { registry = "https://pypi.org/simple" }
@@ -777,11 +794,11 @@ wheels = [
 
 [[package]]
 name = "narwhals"
-version = "1.43.0"
+version = "1.42.1"
 source = { registry = "https://pypi.org/simple" }
-sdist = { url = "https://files.pythonhosted.org/packages/37/d9/ec1bd9f85d30de741b281ef24dabbf029122b638ea19456ffa1b1d862205/narwhals-1.43.0.tar.gz", hash = "sha256:5a28119401fccb4d344704f806438a983bb0a5b3f4a638760d25b1d521a18a79", size = 496455 }
+sdist = { url = "https://files.pythonhosted.org/packages/df/d6/168a787b7800d6c89846b791e4f5ee6b94998a80c8c2838a019d3d71984d/narwhals-1.42.1.tar.gz", hash = "sha256:50a5635b11aeda98cf9c37e839fd34b0a24159f59a4dfae930290ad698320494", size = 492865 }
 wheels = [
-    { url = "https://files.pythonhosted.org/packages/1e/8d/07b892f237491e03328de4c69c17ed8b99a5b6faf84575ca06b15cbf2674/narwhals-1.43.0-py3-none-any.whl", hash = "sha256:7accb0eae172f5697ada3635f46221dfcc98e9419f694df628c0745526d5c514", size = 362730 },
+    { url = "https://files.pythonhosted.org/packages/79/3f/8d450588206b437dd239a6d44230c63095e71135bd95d5a74347d07adbd5/narwhals-1.42.1-py3-none-any.whl", hash = "sha256:7a270d44b94ccdb277a799ae890c42e8504c537c1849f195eb14717c6184977a", size = 359888 },
 ]
 
 [[package]]
@@ -1666,6 +1683,19 @@ wheels = [
 ]
 
 [[package]]
+name = "sqlmodel"
+version = "0.0.24"
+source = { registry = "https://pypi.org/simple" }
+dependencies = [
+    { name = "pydantic" },
+    { name = "sqlalchemy" },
+]
+sdist = { url = "https://files.pythonhosted.org/packages/86/4b/c2ad0496f5bdc6073d9b4cef52be9c04f2b37a5773441cc6600b1857648b/sqlmodel-0.0.24.tar.gz", hash = "sha256:cc5c7613c1a5533c9c7867e1aab2fd489a76c9e8a061984da11b4e613c182423", size = 116780 }
+wheels = [
+    { url = "https://files.pythonhosted.org/packages/16/91/484cd2d05569892b7fef7f5ceab3bc89fb0f8a8c0cde1030d383dbc5449c/sqlmodel-0.0.24-py3-none-any.whl", hash = "sha256:6778852f09370908985b667d6a3ab92910d0d5ec88adcaf23dbc242715ff7193", size = 28622 },
+]
+
+[[package]]
 name = "sqlparse"
 version = "0.5.3"
 source = { registry = "https://pypi.org/simple" }
@@ -1941,4 +1971,13 @@ source = { registry = "https://pypi.org/simple" }
 sdist = { url = "https://files.pythonhosted.org/packages/41/53/2e0253c5efd69c9656b1843892052a31c36d37ad42812b5da45c62191f7e/widgetsnbextension-4.0.14.tar.gz", hash = "sha256:a3629b04e3edb893212df862038c7232f62973373869db5084aed739b437b5af", size = 1097428 }
 wheels = [
     { url = "https://files.pythonhosted.org/packages/ca/51/5447876806d1088a0f8f71e16542bf350918128d0a69437df26047c8e46f/widgetsnbextension-4.0.14-py3-none-any.whl", hash = "sha256:4875a9eaf72fbf5079dc372a51a9f268fc38d46f767cbf85c43a36da5cb9b575", size = 2196503 },
+]
+
+[[package]]
+name = "win32-setctime"
+version = "1.2.0"
+source = { registry = "https://pypi.org/simple" }
+sdist = { url = "https://files.pythonhosted.org/packages/b3/8f/705086c9d734d3b663af0e9bb3d4de6578d08f46b1b101c2442fd9aecaa2/win32_setctime-1.2.0.tar.gz", hash = "sha256:ae1fdf948f5640aae05c511ade119313fb6a30d7eabe25fef9764dca5873c4c0", size = 4867 }
+wheels = [
+    { url = "https://files.pythonhosted.org/packages/e1/07/c6fe3ad3e685340704d314d765b7912993bcb8dc198f0e7a89382d37974b/win32_setctime-1.2.0-py3-none-any.whl", hash = "sha256:95d644c4e708aba81dc3704a116d8cbc974d70b3bdb8be1d150e36be6e9d1390", size = 4083 },
 ]

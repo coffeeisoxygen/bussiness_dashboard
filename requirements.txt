@@ -108,6 +108,7 @@ colorama==0.4.6 \
     # via
     #   click
     #   ipython
+    #   loguru
     #   pytest
     #   sqlfluff
     #   tqdm
@@ -340,6 +341,10 @@ kanaries-track==0.0.5 \
     --hash=sha256:0b154cd2acdd3dc96804fc05aea7579d043353917a5c74fee4d9028c79126f2c \
     --hash=sha256:926b29a28516ac2544eeb47cfd74c5d7d84c397f65b1e9d2daf373f7f4961543
     # via pygwalker
+loguru==0.7.3 \
+    --hash=sha256:19480589e77d47b8d85b2c827ad95d49bf31b0dcde16593892eb51dd18706eb6 \
+    --hash=sha256:31a33c10c8e1e10422bfd431aeb5d351c7cf7fa671e3c4df004162264b28220c
+    # via bussiness-dashboard
 markupsafe==3.0.2 \
     --hash=sha256:0f4ca02bea9a23221c0182836703cbf8930c5e9454bacce27e767509fa286a30 \
     --hash=sha256:131a3c7689c85f5ad20f9f6fb1b866f402c445b220c19fe4308c0b147ccd2ad9 \
@@ -381,9 +386,9 @@ monotonic==1.6 \
     --hash=sha256:3a55207bcfed53ddd5c5bae174524062935efed17792e9de2ad0205ce9ad63f7 \
     --hash=sha256:68687e19a14f11f26d140dd5c86f3dba4bf5df58003000ed467e0e2a69bca96c
     # via segment-analytics-python
-narwhals==1.43.0 \
-    --hash=sha256:5a28119401fccb4d344704f806438a983bb0a5b3f4a638760d25b1d521a18a79 \
-    --hash=sha256:7accb0eae172f5697ada3635f46221dfcc98e9419f694df628c0745526d5c514
+narwhals==1.42.1 \
+    --hash=sha256:50a5635b11aeda98cf9c37e839fd34b0a24159f59a4dfae930290ad698320494 \
+    --hash=sha256:7a270d44b94ccdb277a799ae890c42e8504c537c1849f195eb14717c6184977a
     # via
     #   altair
     #   plotly
@@ -633,7 +638,9 @@ pyasn1-modules==0.4.2 \
 pydantic==2.11.7 \
     --hash=sha256:d989c3c6cb79469287b1569f7447a17848c998458d49ebe294e975b9baf0f0db \
     --hash=sha256:dde5df002701f6de26248661f6835bbe296a47bf73990135c7d07ce741b9623b
-    # via pygwalker
+    # via
+    #   pygwalker
+    #   sqlmodel
 pydantic-core==2.33.2 \
     --hash=sha256:04a1a413977ab517154eebb2d326da71638271477d6ad87a769102f7c2488c56 \
     --hash=sha256:0a9f2c9dd19656823cb8250b0724ee9c60a82f3cdf68a080979d13092a3b0fef \
@@ -912,6 +919,7 @@ sqlalchemy==2.0.41 \
     # via
     #   bussiness-dashboard
     #   pygwalker
+    #   sqlmodel
 sqlfluff==3.4.1 \
     --hash=sha256:3c03464be46cfe7c83d11a753d5aa76f7b8e030ff018d5e61a8683d43002f31e \
     --hash=sha256:caa262247763dd2cb10bc437cb91d57e0b8e534277b30d7e3beae6dfec946422
@@ -919,6 +927,10 @@ sqlglot==26.29.0 \
     --hash=sha256:023f1f9c35f0b5c9e5614e87624567bf20a69940995a4cbfe89c5481b9239474 \
     --hash=sha256:373376bab433d55b291ccbbf9fd59e08a59cde059bdb64e32d1f15accc07ac65
     # via pygwalker
+sqlmodel==0.0.24 \
+    --hash=sha256:6778852f09370908985b667d6a3ab92910d0d5ec88adcaf23dbc242715ff7193 \
+    --hash=sha256:cc5c7613c1a5533c9c7867e1aab2fd489a76c9e8a061984da11b4e613c182423
+    # via bussiness-dashboard
 sqlparse==0.5.3 \
     --hash=sha256:09f67787f56a0b16ecdbde1bfc7f5d9c3371ca683cfeaa8e6ff60b4807ec9272 \
     --hash=sha256:cf2196ed3418f3ba5de6af7e82c694a9fbdbfecccdfc72e281548517081f16ca
@@ -1053,3 +1065,7 @@ widgetsnbextension==4.0.14 \
     --hash=sha256:4875a9eaf72fbf5079dc372a51a9f268fc38d46f767cbf85c43a36da5cb9b575 \
     --hash=sha256:a3629b04e3edb893212df862038c7232f62973373869db5084aed739b437b5af
     # via ipywidgets
+win32-setctime==1.2.0 ; sys_platform == 'win32' \
+    --hash=sha256:95d644c4e708aba81dc3704a116d8cbc974d70b3bdb8be1d150e36be6e9d1390 \
+    --hash=sha256:ae1fdf948f5640aae05c511ade119313fb6a30d7eabe25fef9764dca5873c4c0
+    # via loguru

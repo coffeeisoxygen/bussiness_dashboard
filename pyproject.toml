@@ -6,10 +6,12 @@ description = "ETL And Reporting Dashboard for Bussiness Intelligence using Stre
 readme = "README.md"
 requires-python = ">=3.12"
 dependencies = [
+    "loguru>=0.7.3",
     "openpyxl>=3.1.5",
     "plotly>=6.1.2",
     "pygwalker>=0.4.9.15",
     "sqlalchemy>=2.0.41",
+    "sqlmodel>=0.0.24",
     "st-gsheets-connection>=0.1.0",
     "stqdm>=0.0.5",
     "streamlit>=1.45.1",
